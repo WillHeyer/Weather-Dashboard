@@ -5,3 +5,7 @@ This project allows users to type in a city of their choice and see forecast pre
 
 ![image](Assets/Screen%Shot%2021-01-14%at%11.48.06%PM.png)
 
+# Links
+https://willheyer.github.io/Weather-Dashboard/
+https://github.com/WillHeyer/Weather-Dashboard
+
