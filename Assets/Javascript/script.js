@@ -1,6 +1,6 @@
 var cityName = $("#search-city").val();
 
-var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=0d2a7f7bab7c452a6b8b48c2632901db";
+var queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=65738807a1c6c21d0113b05cea3caf6c";
 
 var savedCities = JSON.parse(localStorage.getItem('cityListNames')) || [];
 
@@ -11,7 +11,7 @@ $("#search-button").on("click", function(event) {
     savedCities.push(cityName);
 
     localStorage.setItem("cityListNames", JSON.stringify(savedCities));
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=0d2a7f7bab7c452a6b8b48c2632901db";
+    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=65738807a1c6c21d0113b05cea3caf6c";
     $.ajax({
         url: queryURL,
         method: "GET"
@@ -30,7 +30,7 @@ $("#search-button").on("click", function(event) {
           currentWindspeed.text(response.wind.speed + " MPH")
           $("#wind-speed").append(currentWindspeed)
         })
-        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=0d2a7f7bab7c452a6b8b48c2632901db"
+        var queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=65738807a1c6c21d0113b05cea3caf6c"
         $.ajax({
             url: queryURL,
             method: "GET"
