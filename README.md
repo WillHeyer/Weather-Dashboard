@@ -1,5 +1,5 @@
 # Weather-Dashboard
-A quick and easy weather dashbboard that shows you the current weather and 5 day forcast for a user-given location.
+Shows Current Weather and 5 day prediction
 # Overview
 This project allows users to type in a city of their choice and see forecast predictions. The city they search for is added to the local storage. OpenWeather API's are used for the data within this project. 
 
